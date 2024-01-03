@@ -1,3 +1,4 @@
+select * from employee
 SELECT * FROM EMPLOYEE;
 SELECT * FROM DEPT;
 -- Enable DBMS_OUTPUT for displaying results
