@@ -1,9 +1,8 @@
 SELECT * FROM EMPLOYEE;
-SELECT * FROM EMPLOYEE;
-SELECT * FROM EMPLOYEE
+
 -- Enable DBMS_OUTPUT for displaying results
 SET SERVEROUTPUT ON;
-
+set serveroutput on
 --1.CREATE STORE PROCEDURE FOR FIND MAX SALARY OF THE EMPLOYE FROM TABLE
 CREATE OR REPLACE PROCEDURE FindMaxSalaryProc AS
   v_max_salary NUMBER;
@@ -54,7 +53,7 @@ into v_sec_high_sal
   END IF;
  end FinSecHighSalProc;
  /
- 
+
  exec FinSecHighSalProc;
  
  --4. CREATE STORE PROCEDURE FOR FIND Nth HIGHEST SALARY FROM TABLE USING ANALYTICAL FUNC
@@ -85,3 +84,4 @@ END FindNthHighestSalaryProc2;
 /
 
 EXEC FindNthHighestSalaryProc2(3);
+select * from employee
