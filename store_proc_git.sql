@@ -2,7 +2,7 @@ SELECT * FROM EMPLOYEE;
 SELECT * FROM EMPLOYEE;
 -- Enable DBMS_OUTPUT for displaying results
 set serveroutput on
-select * from employee
+select * from employee.
 --1.CREATE STORE PROCEDURE FOR FIND MAX SALARY OF THE EMPLOYE FROM TABLE
 CREATE OR REPLACE PROCEDURE FindMaxSalaryProc AS
   v_max_salary NUMBER;
