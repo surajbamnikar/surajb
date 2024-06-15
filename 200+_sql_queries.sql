@@ -7,7 +7,7 @@ hiredate date,
 sal number(20),
 comm number(20)
 );
-
+ select * from dept
 create table dept(
 dept_no number(20) primary key,
 dname varchar(200),
