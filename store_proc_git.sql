@@ -1,4 +1,5 @@
 SELECT * FROM EMPLOYEE;
+select * from residents
 SELECT * FROM EMPLOYEE;
 -- Enable DBMS_OUTPUT for displaying results
 set serveroutput on
