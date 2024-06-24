@@ -3,7 +3,9 @@ select * from residents
 SELECT * FROM EMPLOYEE;
 -- Enable DBMS_OUTPUT for displaying results
 set serveroutput on
-select * from employee.
+SELECT oraclesuraj FROM users_table
+select * from employee
+--Write store procedure for insert command 
 --1.CREATE STORE PROCEDURE FOR FIND MAX SALARY OF THE EMPLOYE FROM TABLE
 CREATE OR REPLACE PROCEDURE FindMaxSalaryProc AS
   v_max_salary NUMBER;
@@ -45,7 +47,7 @@ into v_sec_high_sal
  from employee
  where sal<(select max(sal) l from employee);
  
--- DBMS_OUTPUT.PUT_LINE('Second Highest Salary'||v_sec_high_sal );
+
   -- Display the result
   IF v_sec_high_sal IS NOT NULL THEN
     DBMS_OUTPUT.PUT_LINE('Second Highest Salary: ' || v_sec_high_sal);
