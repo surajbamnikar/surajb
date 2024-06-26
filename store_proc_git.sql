@@ -84,4 +84,20 @@ END FindNthHighestSalaryProc2;
 /
 
 EXEC FindNthHighestSalaryProc2(3);
-select * from employee
+
+select * from employee order by sal 
+
+create or replace procedure second_high_sal
+as sec_high_sal number;
+
+begin
+select max(sal)
+into sec_high_sal
+ from employee
+ where sal<(select max(sal) l from employee);
+    DBMS_OUTPUT.PUT_LINE('Second Highest Salary: ' || sec_high_sal);
+   end second_high_sal;
+ /
+
+exec second_high_sal
+
