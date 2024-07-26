@@ -88,3 +88,4 @@ END FindNthHighestSalaryProc2;
 
 EXEC FindNthHighestSalaryProc2(3);
 select * from employee
+select * from emp
