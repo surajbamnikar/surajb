@@ -109,3 +109,4 @@ into sec_high_sal
 exec second_high_sal
 
 >>>>>>> main
+select * from emp
