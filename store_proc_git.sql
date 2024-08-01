@@ -87,6 +87,8 @@ EXEC FindNthHighestSalaryProc2(3);
 
 select * from employee order by sal 
 
+select * from employee order by sal 
+
 create or replace procedure second_high_sal
 as sec_high_sal number;
 
