@@ -93,6 +93,8 @@ select * from emp
 =======
 
 select * from employee order by sal 
+select * from emp
+
 
 create or replace procedure second_high_sal
 as sec_high_sal number;
